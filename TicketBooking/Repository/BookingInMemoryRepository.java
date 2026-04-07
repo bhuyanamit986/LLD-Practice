@@ -15,47 +15,47 @@ public class BookingInMemoryRepository implements BookingRespositoryInterface {
         return users.get(userId);
     }
 
-    public void saveUser(String userId, User user) {
-        users.put(userId, user);
+    public void saveUser(User user) {
+        users.put(user.id, user);
     }
 
     // Movies
     public Movie getMovieDetails(String movieId) {
         return movies.get(movieId);  
     }
-    public void saveMovie(String movieId, User user) {
-        return movies.put(movieId, user);
+    public void saveMovie(User user) {
+        return movies.put(movie.id, user);
     }
 
     // Theaters
     public Theater getTheaterDetails(String theaterId) {
         return theaters.get(theaterId);
     }
-    public void saveTheater(String theaterId, Theater theater) {
-        theaters.put(theaterId, theater);
+    public void saveTheater(Theater theater) {
+        theaters.put(theater.id, theater);
     }
 
     // Shows
     public Show getShowDetails(String showId) {
         return shows.get(showId);
     }
-    public void saveShow(String showId, Show show) {
-        shows.put(showId, show)
+    public void saveShow(Show show) {
+        shows.put(show.id, show)
     }
 
     // Bookings
     public Booking getBookingDetails(String bookingId) {
         return bookings.get(bookingId);
     }
-    public void saveBooking(String bookingId, Booking booking) {
-        bookings.put(bookingId, booking)
+    public void saveBooking(Booking booking) {
+        bookings.put(booking.id, booking)
     }
 
     // PaymentDetails
     public Payment getPaymentDetails(String paymentId) {
         return payments.get(paymentId);
     }
-    public void savePaymentDetail(String paymentId, Payment payment) {
-        payments.put(paymentId, payment);
+    public void savePaymentDetail(Payment payment) {
+        payments.put(payment.id, payment);
     }
 }
