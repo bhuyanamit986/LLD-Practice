@@ -1,7 +1,7 @@
 public interface BookingRespositoryInterface {
     
     // Users
-    public List<User> getUsers(String userId) {}
+    public List<User> getUsers() {}
     public User getUserDetails(String userId) {}
     public void saveUser(User user) {}
 
@@ -16,6 +16,8 @@ public interface BookingRespositoryInterface {
     // Shows
     public Show getShowDetails(String showId) {}
     public void saveShow(Show show) {}
+
+    public Seat getSeatDetails(String seatId) {}
 
     // Bookings
     public Booking getBookings(String bookingId) {}
